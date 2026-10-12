@@ -374,10 +374,12 @@ html.light .pp,html.light .bar .mbtn{border-color:rgba(18,17,16,.55);background:
   .hero-wrap{height:auto!important}
   .hero{position:relative!important}
   .say{padding-top:56px!important;padding-bottom:40px!important}
-  .work{height:calc(100svh * 4.6)!important}
-  .work-pin{justify-content:center;padding-top:64px!important;padding-bottom:20px!important}
+  .work{height:auto!important}
+  .work-pin{position:relative!important;height:auto!important;overflow:visible!important;padding:56px 0 40px!important}
   .work-top{margin-bottom:16px!important}
-  .track{flex:none!important}
+  .track{flex:none!important;transform:none!important;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain}
+  .track::-webkit-scrollbar{display:none}
+  .track>.pc{scroll-snap-align:center}
   .how{padding-top:56px!important;padding-bottom:24px!important}
   .proof{padding-top:56px!important;padding-bottom:56px!important;margin-top:24px!important;row-gap:16px!important}
   .proof-k{padding-top:0!important}
